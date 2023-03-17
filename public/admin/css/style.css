@@ -1,0 +1,68 @@
+
+.rated:not(:checked) > input {
+position:absolute;
+display: none;
+}
+.rated:not(:checked) > label {
+float:right;
+width:1em;
+overflow:hidden;
+white-space:nowrap;
+cursor:pointer;
+font-size:30px;
+color:#ffc700;
+}
+.rated:not(:checked) > label:before {
+content: '★ ';
+}
+.rated > input:checked ~ label {
+color: #ffc700;
+}
+.rated:not(:checked) > label:hover,
+.rated:not(:checked) > label:hover ~ label {
+color: #deb217;
+}
+.rated > input:checked + label:hover,
+.rated > input:checked + label:hover ~ label,
+.rated > input:checked ~ label:hover,
+.rated > input:checked ~ label:hover ~ label,
+.rated > label:hover ~ input:checked ~ label {
+color: #c59b08;
+}
+
+.error {
+  color: #ea1414;
+}
+
+.rated {
+  float: left;
+}
+
+.table_row {
+  margin-top: 10px;
+  margin-left: 13px;
+  position: inherit;
+  margin-right: 9px;
+}
+.d-flex.justify-content-between.align-items-center {
+  float: right;
+}
+
+.dt-button {
+  background: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  border-radius: 15px;
+  width: 50px;
+}
+
+.dt-button span {
+  font-size: 12px;
+  position: inherit;
+  text-align: center !important;
+}
+
+.card-body{margin: 11px 4px 0px 6px;}
+#postsearch_wrapper {
+  padding: 10px 9px 9px 9px;
+}

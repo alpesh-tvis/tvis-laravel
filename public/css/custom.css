@@ -1,0 +1,6 @@
+.select2-selection__choice{
+  background-color: var(--bs-gray-200);
+  border: none !important;
+  font-size: 12px;
+  font-size: 0.85rem !important;
+}
